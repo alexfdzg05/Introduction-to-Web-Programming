@@ -1,0 +1,67 @@
+body {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(255, 255, 255);
+    color: purple;
+}
+
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', monospace;
+}
+
+/* Shelf container */
+.shelf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;;
+}
+
+/* Each shelf row */
+.shelf-row {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #8B5E3C; /* brown wood color */
+    border: 4px solid #5C3A21; /* darker wood frame */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 15px 0;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5); /* slight 3D effect */
+}
+
+/* Each slot/book container */
+.slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    background-color: #A0522D; /* optional lighter wood for slots */
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* Book images */
+.slot img {
+    width: 100px;   /* smaller book images */
+    height: auto;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    border: 1px solid #5C3A21;
+}
+
+/* Book links */
+.slot a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.6rem;
+    text-align: center;
+}
+

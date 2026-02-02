@@ -1,0 +1,21 @@
+Mi pagina web va a tener un menú arriba del todo.
+
+Va a tener un fondo de color negro con colores bastante llamativos. 
+
+Quiero que tenga un botón que invierta los colores
+Quiero que mi página web tenga un menú para traducir la página en los idiomas que domino (español/inglés)
+
+Quiero tener un espacio personal donde colocar mis movidas: Actividades, canal de youtube, información de contacto (alejo.lowkey + a.fernandezguerre)
+Quiero que tenga otro color al de la pagina principal --> Una especie de naranja claro
+
+Quiero tener 4 páginas:
+- Main (Quien soy + Mis objetivos profeisonales) 
+- Projects 
+- Experiencia + Estudios + Eventos que he asistido (Capturas de pantalla) + - Biblioteca (Hacer una especie de estantería donde cada rectángulo tenga un hipervínculo a cada uno de los libros que me he leído)
+- Personal
+
+Quiero añadir fotos y publicaciones (Tanto en el personal como en el profesional)
+
+
+Quiero que la fuente de mi página web sea robótica / digital
+

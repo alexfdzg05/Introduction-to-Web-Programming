@@ -1,0 +1,68 @@
+body {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(255, 255, 255);
+    color: purple;
+}
+
+
+/* Sección principal */
+.hobbies-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Rectángulo de título */
+.hobbies-title {
+    background-color: #1f2933;
+    color: white;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Tarjeta de cada hobby */
+.hobby-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Invertir orden (texto - imagen) */
+.hobby-card.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Imágenes */
+.hobby-card img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Texto */
+.hobby-card p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.hobby-card strong {
+    font-size: 1.1rem;
+    color: #111;
+}

@@ -1,0 +1,37 @@
+:root{
+    --margin: 5% 
+}
+
+h1{
+    background-color: green;
+    border-radius: 10px;
+}
+
+h2{
+    background-color: rgb(50, 163, 50);
+    border-radius: 25px;
+
+}
+
+body{
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+
+    background-color: rgb(236, 235, 235);
+    /*rgb(116, 194, 120); */
+}
+
+div{
+    margin-bottom: 10%;
+}
+
+.chart{
+    zoom: 100%;
+}
+
+fieldset{
+    background-color: white;
+    border-radius: 25px;
+}

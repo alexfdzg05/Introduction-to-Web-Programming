@@ -1,0 +1,119 @@
+body {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: black;
+    color: black;
+    text-align: center;
+}
+
+nav {
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(255, 255, 255);
+    color: purple;
+}
+
+
+/* Rectángulo principal */
+.container {
+    max-width: 900px;
+    margin: 40px auto; /* separación vertical */
+    background-color: #ffffff;
+    border: 2px solid #b0b0b0;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+
+/* Cada proyecto */
+.project {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 20px;
+padding-bottom: 16px;
+border-bottom: 1px solid #d0d0d0;
+}
+
+
+.project:last-child {
+border-bottom: none;
+}
+
+/*-----------------------------------------*/
+
+
+/* Proyecto 2: mantener la fila con texto a la izquierda */
+.project-2 {
+    display: flex; /* fila */
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Contenedor de imágenes: columna */
+.project-2 .project-images-column {
+    display: flex;
+    flex-direction: column; /* imágenes una debajo de la otra */
+    gap: 10px; /* separación vertical entre imágenes */
+}
+
+/* Cada imagen del Proyecto 2 */
+.project-2 .project-images-column .project-image img {
+    width: 100px; /* igual que Proyecto 1 */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/*-----------------------------------------*/
+
+
+/* Texto del proyecto */
+.project-text {
+color: black;
+flex: 1;
+}
+
+
+.project-text h3 {
+color: black;
+margin: 0 0 8px 0;
+}
+
+
+.project-text p {
+margin: 0;
+line-height: 1.5;
+}
+
+
+/* Imagen del proyecto */
+.project-image img {
+width: 400px;
+height: 200px;
+object-fit: cover;
+border-radius: 8px;
+border: 1px solid #ccc;
+}
+
+.TOP {
+    background-color: #cfcfcf;
+    color: black;
+    border-radius: 10px;
+    padding: 0px;
+    margin-bottom: 5px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    border: 2px solid #9e9e9e;
+}
+
+.BOTTOM{
+    background-color: #cfcfcf;
+    color: black;
+    border-radius: 10px;
+    padding: 0px;
+    margin-bottom: 5px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    border: 2px solid #9e9e9e;
+}
