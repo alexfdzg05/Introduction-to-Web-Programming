@@ -3,74 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Human Side</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Jersey+10&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css-code.css" />
+
+    <link rel="stylesheet" href="./css-code.css" />
+    <script src="./js-code.js" defer></script>
 </head>
-<nav>
-        <a href="../index.html">Main</a>
-        <a href="../Projects/index.html">Projects</a>
-        <a href="../Studies_and_experience/index.html">Knowledge</a> 
-        <a href="index.html">About Me</a>
-</nav>
+
 <body>
 
-    <section class="hobbies-section">
+<nav>
+    <a href="../../Main/index.html">Main</a>
+    <a href="../Projects/index.html">Projects</a>
+    <a href="../Studies_and_experience/index.html">Knowledge</a> 
+    <a href="../Personal_Space/index.html">About Me</a>
+</nav>
 
-        <!-- Título -->
-        <div class="hobbies-title">
-            <h1>Hobbies</h1>
+<section class="about-container">
+    <div class="about-text">
+
+        <div class="info-container">
+
+            <!-- BLOQUE IZQUIERDO: TEXTO -->
+            <div class="info-box">
+                <hr class="separator">
+                <h3>What I enjoy in software</h3>
+                <hr class="separator">
+                <p>
+                    I always viewed software as if it was a puzzle to be solved.
+                    <br>
+                    <br>
+                    It makes it exciting to know what 
+                    projects i could bouild and how I could contribute to society through my knowledge of certain technologies.
+                    <br>
+                    <br>
+                    <p class="emoji">
+                    🧩🏗️
+                    </p>
+                </p>
+                <hr class="separator">
+                <h3>How I work</h3>
+                <hr class="separator">
+                <p>
+                    I am a really analyitical person when it comes to workspace, but at the same time
+                    I learnt that there is always a "we" in a team. I like good environments where me and my teamates
+                    are able to work at our peak performance.
+                    <br>
+                    <br>
+                    In the team I am with, you will always have me as a supporter of other teamates or as a leader
+                    <br>
+                    <br>
+                    <p class="emoji">
+                    🧠✌️
+                    </p>
+                </p>
+                <hr class="separator">
+                <h3>Outside code</h3>
+                <hr class="separator">
+                <p>
+                    Outside of software, I enjoy activities that require discipline and
+                    long-term effort.
+                    <br>
+                    <br>
+                    <p class="petite-text">
+                    HobbiesList hobbies = [Reading, Sports, Bass, ...]
+                    </p>
+                    <br>
+                    <br>
+                    <p class="emoji">
+                    📘⚽🎸
+                    </p>
+                </p>
+            </div>
+
+            <!-- BLOQUE DERECHO: IMAGEN -->
+             <div class>
+                <div class="info-box">
+                    <div class="image-box">
+                        <a href="https://www.linkedin.com/in/alejandro-fernández-guerrero-8989b8382" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/3840px-LinkedIn_icon.svg.png" alt="LinkedIn profile">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="download-cv">
+                        <button id="downloadCV">Download CV</button>
+                    </div>                
+                </div>
+            </div>
         </div>
+    </div>
+</section>
 
-        <!-- Hobby 1 -->
-        <div class="hobby-card">
-            <img src="images/reading.jpg" alt="Lectura">
-            <p>
-                <strong>Lectura</strong><br>
-                Disfruto la lectura enfocada en tecnología, pensamiento crítico y desarrollo personal,
-                como una forma constante de aprendizaje y reflexión.
-            </p>
-        </div>
-
-        <!-- Hobby 2 -->
-        <div class="hobby-card reverse">
-            <p>
-                <strong>Powerbuilding</strong><br>
-                Practico powerbuilding como una forma de desarrollo físico y mental,
-                aplicando disciplina, planificación y mejora continua.
-            </p>
-            <img src="images/powerbuilding.jpg" alt="Powerbuilding">
-        </div>
-
-        <!-- Hobby 3 -->
-        <div class="hobby-card">
-            <img src="images/youtube.jpg" alt="YouTube">
-            <p>
-                <strong>Creación de contenido en YouTube</strong><br>
-                Desarrollo un canal donde trato temas de reflexión y pensamiento crítico,
-                mejorando mi capacidad de comunicación y estructuración de ideas.
-            </p>
-        </div>
-
-        <!-- Hobby 4 -->
-        <div class="hobby-card reverse">
-            <p>
-                <strong>Bajo eléctrico</strong><br>
-                Tocar el bajo eléctrico me permite desarrollar creatividad,
-                constancia y coordinación como actividad complementaria al trabajo técnico.
-            </p>
-            <img src="images/bass.jpg" alt="Bajo eléctrico">
-        </div>
-
-            <div class="BOTTOM">
+<section class="additional">
+    <div class="BOTTOM">
         <p>
-            Github: <a href="https://github.com/alexfdzg05">alexfdzg05</a>
+            Gmail: <a href="#" id="copyEmail">a.fernandez.guerre@gmail.com</a>
         </p>
     </div>
-    </section>
+</section>
 
 </body>
 </html>

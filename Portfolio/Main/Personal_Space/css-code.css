@@ -11,61 +11,138 @@ nav {
     color: purple;
 }
 
-
-/* Sección principal */
-.hobbies-section {
-    max-width: 900px;
-    margin: 0 auto;
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', monospace;
 }
 
-/* Rectángulo de título */
-.hobbies-title {
-    background-color: #1f2933;
-    color: white;
-    padding: 20px;
-    border-radius: 16px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-/* Tarjeta de cada hobby */
-.hobby-card {
-    background-color: white;
-    border-radius: 16px;
-    padding: 24px;
-    margin-bottom: 24px;
-
+.about-container {
     display: flex;
-    align-items: center;
-    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    margin-right: 15%; /* <- aquí añades margen extra a la izquierda */
 }
 
-/* Invertir orden (texto - imagen) */
-.hobby-card.reverse {
-    flex-direction: row-reverse;
+.about-text {
+    flex: 2;
 }
 
-/* Imágenes */
-.hobby-card img {
-    width: 180px;
-    height: 120px;
-    object-fit: cover;
+.about-text h1 {
+    margin-top: 0;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 250px;
+    width: 100%;
     border-radius: 12px;
 }
 
-/* Texto */
-.hobby-card p {
-    color: #333;
-    line-height: 1.6;
-    font-size: 1rem;
+.additional-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.hobby-card strong {
-    font-size: 1.1rem;
-    color: #111;
+.info-box {
+    margin-top: 20px;
+    padding: 15px 20px;
+
+    background-color: #000;
+    color: #fff;
+
+    border: 2px solid #fff;
+    border-radius: 12px;
+
+    max-width: 500px; /* ajusta si lo quieres más ancho */
+    font-family: 'Press Start 2P', monospace; /* opcional */
+    font-size: 0.75rem;
 }
+
+.info-box {
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.info-container {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap; /* importante: no dejar que los bloques se pongan uno debajo del otro */
+}
+
+.info-container > .info-box:first-child {
+    flex: 2 1 0;  /* bloque de texto: puede crecer y encoger, ocupa más espacio */
+}
+
+.info-container > .info-box:last-child {
+    flex: 1 0 200px;  /* bloque de imágenes: ancho mínimo 200px, no se encoje demasiado */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-box img {
+    width: 77.5%;       /* 15% más pequeñas que antes */
+    max-width: 150px; /* sigue sin sobrepasar el ancho del bloque */
+    height: auto;     /* mantiene la proporción */
+    border-radius: 12px;
+    margin: auto;     /* centra horizontalmente */
+}
+
+.about-image-and-competences{
+    max-width: 40%;
+}
+
+.info-container {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap; /* NO permitir que los bloques bajen */
+}
+
+/* Bloque de texto */
+.info-container > .info-box:first-child {
+    flex: 2 1 300px; /* ocupa más espacio, puede encoger un poco */
+    min-width: 200px; /* no se encoge demasiado */
+}
+
+/* Bloque de imágenes */
+.info-container > .info-box:last-child {
+    flex: 1 0 200px;  /* ancho mínimo 200px, no se encoje */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* centra las imágenes */
+}
+
+/* Imágenes dentro del bloque derecho */
+.image-box img {
+    max-width: 98.9px;  /* tamaño máximo de cada imagen */
+    width: auto;       /* proporcional */
+    height: auto;
+    border-radius: 12px;
+    margin: 10px 0;    /* separación vertical */
+}
+
+
+
+
 
 .BOTTOM{
     background-color: #cfcfcf;
@@ -78,10 +155,22 @@ nav {
     border: 2px solid #9e9e9e;
 }
 
-.separator {
-  border: none;
-  height: 2px;
-  background-color: #333;
-  width: 50%;
-  margin: 20px auto;
+
+#copyEmail {
+  cursor: pointer;
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+#copyEmail:hover {
+  color: #003366;
+}
+
+.petite-text{
+    font-size: 0.6rem;
+    line-height: 1.5;
+}
+
+.emoji{
+    font-size: 2rem;
 }
