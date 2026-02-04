@@ -56,6 +56,91 @@ body {
     margin: auto;
 }
 
+.info-box {
+    margin-top: 20px;
+    padding: 15px 20px;
+
+    background-color: #000;
+    color: #fff;
+
+    border: 2px solid #fff;
+    border-radius: 12px;
+
+    max-width: 500px; /* ajusta si lo quieres más ancho */
+    font-family: 'Press Start 2P', monospace; /* opcional */
+    font-size: 0.75rem;
+}
+
+.info-box {
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.info-container {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap; /* importante: no dejar que los bloques se pongan uno debajo del otro */
+}
+
+.info-container > .info-box:first-child {
+    flex: 2 1 0;  /* bloque de texto: puede crecer y encoger, ocupa más espacio */
+}
+
+.info-container > .info-box:last-child {
+    flex: 1 0 200px;  /* bloque de imágenes: ancho mínimo 200px, no se encoje demasiado */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-box img {
+    width: 77.5%;       /* 15% más pequeñas que antes */
+    max-width: 150px; /* sigue sin sobrepasar el ancho del bloque */
+    height: auto;     /* mantiene la proporción */
+    border-radius: 12px;
+    margin: auto;     /* centra horizontalmente */
+}
+
+.about-image-and-competences{
+    max-width: 40%;
+}
+
+.info-container {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap; /* NO permitir que los bloques bajen */
+}
+
+/* Bloque de texto */
+.info-container > .info-box:first-child {
+    flex: 2 1 300px; /* ocupa más espacio, puede encoger un poco */
+    min-width: 200px; /* no se encoge demasiado */
+}
+
+/* Bloque de imágenes */
+.info-container > .info-box:last-child {
+    flex: 1 0 200px;  /* ancho mínimo 200px, no se encoje */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* centra las imágenes */
+}
+
+/* Imágenes dentro del bloque derecho */
+.image-box img {
+    max-width: 98.9px;  /* tamaño máximo de cada imagen */
+    width: auto;       /* proporcional */
+    height: auto;
+    border-radius: 12px;
+    margin: 10px 0;    /* separación vertical */
+}
+
+
+
+
 
 .BOTTOM{
     background-color: #cfcfcf;
@@ -78,3 +163,4 @@ body {
 #copyEmail:hover {
   color: #003366;
 }
+
